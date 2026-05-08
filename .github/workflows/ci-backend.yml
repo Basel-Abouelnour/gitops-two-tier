@@ -4,6 +4,7 @@ on:
     branches: [develop]
     paths:
       - 'src/backend/**'
+      - '.github/workflows/ci-backend.yml'
   pull_request:
     branches: [main]
   workflow_dispatch:
