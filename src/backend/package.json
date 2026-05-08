@@ -1,8 +1,20 @@
 {
   "name": "backend-service",
   "version": "1.0.0",
+  "description": "Two-tier GitOps Project - Backend Tier",
   "main": "backend.js",
+  "scripts": {
+    "test": "jest",
+    "build": "node --check backend.js",
+    "package": "npm prune --production",
+    "start": "node backend.js",
+    "dev": "nodemon backend.js"
+  },
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0"
   }
 }

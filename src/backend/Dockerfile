@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm install
 COPY backend.js .
 EXPOSE 5000
-CMD ["node", "backend.js"]
+CMD ["npm", "start"]
