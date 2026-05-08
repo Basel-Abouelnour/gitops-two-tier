@@ -3,7 +3,6 @@ on:
   push:
     branches: 
       - dev
-      - main
     paths:
       - 'src/backend/**'
       - '.github/workflows/ci-backend.yml'

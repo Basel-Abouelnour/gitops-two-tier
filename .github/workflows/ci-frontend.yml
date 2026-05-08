@@ -3,7 +3,6 @@ on:
   push:
     branches: 
       - dev
-      - main
     paths:
       - 'src/frontend/**'
       - '.github/workflows/ci-frontend.yml'
