@@ -1,7 +1,9 @@
 name: Frontend Continuous Integration
 on:
   push:
-    branches: [develop]
+    branches: 
+      - dev
+      - main
     paths:
       - 'src/frontend/**'
       - '.github/workflows/ci-frontend.yml'
