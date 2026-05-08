@@ -1,0 +1,22 @@
+services:
+  backend-service:
+    build: ./backend
+    image: backend:latest
+    networks:
+      - two-tier-network
+    ports:
+      - "5000:5000"
+
+  frontend-service:
+    build: ./frontend
+    image: frontend:latest
+    networks:
+      - two-tier-network
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend-service
+
+networks:
+  two-tier-network:
+    driver: bridge
