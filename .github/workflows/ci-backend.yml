@@ -1,7 +1,9 @@
 name: Backend Continuous Integration
 on:
   push:
-    branches: [develop]
+    branches: 
+      - dev
+      - main
     paths:
       - 'src/backend/**'
       - '.github/workflows/ci-backend.yml'
