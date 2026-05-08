@@ -31,6 +31,6 @@ jobs:
       - name: build and push frontend image
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: src/frontend/
           push: true
           tags: baselabouelnour/two-tier-frontend:latest

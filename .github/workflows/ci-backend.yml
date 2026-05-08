@@ -53,6 +53,6 @@ jobs:
       - name: build and push backend image
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: src/backend/
           push: true
           tags: baselabouelnour/two-tier-backend:latest 
